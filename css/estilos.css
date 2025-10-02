@@ -170,8 +170,9 @@ box-shadow:  5px 5px 6px #b9b9b9,
 .img2-2{
     position: absolute;  
     top: 60px;          
-    right: 20px;         
+    right: 150px;         
     z-index: 5;
+    height: 300px;
 }
 .imag2-3{
     position: relative; 
@@ -192,3 +193,283 @@ box-shadow:  5px 5px 6px #b9b9b9,
     border-radius: 8px;
     max-width: 300px;
 }
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0b1b3f;
+    color: white;
+}
+
+.design-section {
+    display: flex;
+    padding: 50px;
+    gap: 50px;
+}
+
+.left {
+    flex: 1;
+}
+
+.left h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.left p {
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.left button {
+    padding: 10px 20px;
+    background-color: white;
+    color: #0b1b3f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.top-images {
+    display: flex;
+    gap: 20px;
+}
+
+.top-images img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 10px;
+}
+
+.middle-content {
+    display: flex;
+    gap: 20px;
+}
+
+.middle-left img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.middle-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.middle-right .item {
+    display: flex;
+    gap: 10px;
+    font-size: 0.9rem;
+}
+
+.middle-right .item span {
+    font-weight: bold;
+    color: #fff;
+}
+
+.bottom-images {
+    display: flex;
+    gap: 20px;
+}
+
+.bottom-images img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 10px;
+}
+
+/* ---------- Estilos globales ---------- */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #111;
+}
+
+.mentor-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 5%;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+/* ---------- Columna izquierda ---------- */
+.mentor-left {
+  flex: 1;
+  max-width: 500px;
+}
+
+.mentor-left h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.mentor-left h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.mentor-left p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Botón negro */
+.mentor-button {
+  background: #111;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.mentor-button:hover {
+  background: #333;
+}
+
+/* Tarjeta con estadísticas */
+.mentor-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.mentor-stats strong {
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.mentor-stats p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.3;
+}
+
+/* ---------- Columna derecha ---------- */
+.mentor-right {
+  flex: 1;
+  position: relative;
+}
+
+/* Estrella */
+.mentor-star {
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 2px solid #111;
+  padding: 1rem;
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.9rem;
+  width: 120px;
+  clip-path: polygon(
+    50% 0%, 61% 35%, 98% 35%, 68% 57%,
+    79% 91%, 50% 70%, 21% 91%, 32% 57%,
+    2% 35%, 39% 35%
+  );
+}
+
+/* Grid de imágenes */
+.mentor-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 1rem;
+}
+
+.mentor-img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Posiciones */
+.mentor-img.top-left {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.mentor-img.top-right {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.mentor-img.center {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  height: 250px;
+  object-fit: cover;
+}
+
+.mentor-img.bottom {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .mentor-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mentor-left {
+    max-width: 100%;
+  }
+
+  .mentor-stats {
+    text-align: center;
+  }
+
+  .mentor-star {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 1rem auto;
+  }
+
+  .mentor-images {
+    grid-template-columns: 1fr;
+  }
+
+  .mentor-img.center,
+  .mentor-img.bottom {
+    height: auto;
+  }
+}
+
